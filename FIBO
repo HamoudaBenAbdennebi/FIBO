@@ -1,0 +1,14 @@
+import numpy as np
+def fibo(n):
+    u=np.array([int()]*n)
+    u[0]=1
+    u[1]=1
+    for i in range (2,n):
+        u[i]=u[i-1]+u[i-2]
+    return u[i]
+
+def NDor(n):
+    print(fibo (n+1)/fibo(n))
+
+n=int(input(" n="))
+NDor(n)
